@@ -22,18 +22,27 @@ Examples:
 * Physical servers
 * Network appliances
 
-### Proxmox Host and Guests
+### Proxmox Hosts
 
-`192.168.50.50 - 192.168.50.99`
+`192.168.50.50 - 192.168.50.59`
 
-Reserved for the Proxmox environment and services hosted on it.
+Reserved for the Proxmox nodes, a.k.a. each ThinkCentre hosting PVE.
 
 | IP            | Host             | Role                    |
 | ------------- | ---------------- | ----------------------- |
-| 192.168.50.50 | proxmox          | Proxmox VE host         |
-| 192.168.50.51 | minecraft-server | Minecraft LXC           |
-| 192.168.50.52 | vpn-gateway      | Tailscale subnet router |
-| 192.168.50.53 | general-services | Docker / service VM     |
+| 192.168.50.50 | proxmox-01       | Proxmox VE host         |
+
+### Proxmox Guests
+
+`192.168.50.60 - 192.168.50.99`
+
+Reserved for the Proxmox services hosted on the nodes.
+
+| IP            | Host             | Role                    |
+| ------------- | ---------------- | ----------------------- |
+| 192.168.50.60 | minecraft-server | Minecraft LXC           |
+| 192.168.50.61 | vpn-gateway      | Tailscale subnet router |
+| 192.168.50.62 | general-services | Docker / service VM     |
 
 ### User Devices (DHCP)
 
