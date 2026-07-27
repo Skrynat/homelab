@@ -1,0 +1,9 @@
+# Active recording directory
+target_dir /srv/motion/surveillance
+
+# Timestamp-based filenames
+movie_filename %Y-%m-%d_%H-%M-%S
+
+# Example movie format
+movie_output on
+movie_codec mkv
