@@ -23,13 +23,13 @@ Proxmox Host
 │   ├── Fabric Minecraft Server
 │   ├── Homestead modpack
 │   ├── 4 vCPU limit
-│   └── 6 GB RAM
+│   └── 10 GB RAM
 │
 ├── LXC: VPN / Network Services
 │   ├── Tailscale subnet router
 │   ├── Advertises 192.168.50.0/24
 │   ├── WireGuard planned for learning/fallback
-│   └── 512 MB - 1 GB RAM
+│   └── 512 MB
 │
 ├── VM: General Services
 │   ├── Debian
@@ -70,15 +70,13 @@ Configuration files are documented using sanitized examples only.
 | Service                 | Type        | Status  |
 | ----------------------- | ----------- | ------- |
 | Minecraft Server        | Debian LXC  | Working |
-| Tailscale Subnet Router | LXC         | Planned |
-| General Services VM     | Debian VM   | Planned |
-| Motion                  | Docker / VM | Planned |
+| Tailscale Subnet Router | LXC         | Working |
+| General Services VM     | Debian VM   | Working |
+| Motion                  | Docker / VM | Working |
 | Nginx Proxy Manager     | Docker / VM | Planned |
 
 ## Future Work
 
-* Configure Tailscale subnet routing
-* Add automatic Minecraft server startup with systemd
 * Add Minecraft backup strategy
 * Add Proxmox snapshots before major changes
 * Document remote administration workflow
