@@ -49,7 +49,7 @@ The homelab is built around separation of responsibilities.
 
 Minecraft, VPN access, and general services are separated so that each system can be restarted, changed, or debugged without affecting everything else.
 
-The VPN gateway is planned as a dedicated LXC so remote access remains available even when other services, virtual machines, or workstations are rebooted.
+The VPN gateway is deployed as a dedicated LXC so remote access remains available even when other services, virtual machines, or workstations are rebooted.
 
 ## Public Safety
 
@@ -72,7 +72,7 @@ Configuration files are documented using sanitized examples only.
 | Minecraft Server        | Debian LXC  | Working |
 | Tailscale Subnet Router | LXC         | Working |
 | General Services VM     | Debian VM   | Working |
-| Motion                  | Docker / VM | Working |
+| Motion                  | Debian VM   | Working |
 | Nginx Proxy Manager     | Docker / VM | Planned |
 
 ## Future Work
