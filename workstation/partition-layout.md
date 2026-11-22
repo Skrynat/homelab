@@ -1,6 +1,6 @@
 # Partition Layout
 
-Verified 2026-11-21 using Arch Linux, Nobara, Linux Mint, Windows Disk Management and owner confirmation. Five internal drives and 17 partitions. Removable BIOS USB excluded.
+Verified 2026-11-21 using Arch Linux, Nobara, Linux Mint and Windows Disk Management. Five internal drives and 17 partitions. Removable BIOS USB excluded.
 
 Device names are taken from the Arch session and may change between boots. Identify partitions by physical drive model and locally recorded UUID/PARTUUID before making changes.
 
