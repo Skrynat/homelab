@@ -4,6 +4,12 @@ Verified 2026-11-21 using Arch Linux, Nobara, Linux Mint, Windows Disk Managemen
 
 Device names are taken from the Arch session and may change between boots. Identify partitions by physical drive model and locally recorded UUID/PARTUUID before making changes.
 
+## Storage overview
+
+![Color-coded workstation partition layout](assets/storage-layout.svg)
+
+Each bar represents the full capacity of a drive; the bars are normalized independently. Small EFI, reserved and recovery partitions remain listed in the detailed table below.
+
 ## Physical drives
 
 | Device | Model | Type | Reported size | Nominal capacity | Firmware |
@@ -94,6 +100,17 @@ IronWolf traffic totals are approximate, calculated from reported LBA counters u
 - Samsung 970 and 990: zero error information log entries; no self-tests logged.
 - WD SN740: five cumulative error information log entries, no errors in displayed log, and one completed short self-test without error.
 - No extended self-test was performed during this inventory.
+
+## Operating-system roles
+
+| OS | Role |
+| --- | --- |
+| Nobara → CachyOS (planned) | Daily workstation, Linux gaming and multimedia |
+| Arch Linux | Independent experimental and learning environment |
+| Linux Mint | Reliable fallback, recovery environment and master GRUB |
+| Windows 11 | Occasional Windows-specific software and gaming |
+
+Keep Arch, Mint and Windows installed during and after the planned CachyOS migration. No broader storage reorganization is currently planned.
 
 ## Migration boundary
 
