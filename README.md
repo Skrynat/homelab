@@ -1,6 +1,6 @@
 # Homelab
 
-Documentation for my Proxmox-based homelab.
+Documentation for my Proxmox-based homelab and desktop workstation.
 
 This repository tracks the design, setup, troubleshooting, and future plans for a small self-hosted infrastructure environment used for Linux learning, networking practice, remote administration, game hosting, and future services.
 
@@ -82,3 +82,7 @@ Configuration files are documented using sanitized examples only.
 * Document remote administration workflow
 * Add diagrams for network layout
 * Add monitoring and uptime checks
+
+## Workstation
+
+See [Workstation documentation](workstation/README.md) for hardware, storage, bootloader and OS migration notes.
